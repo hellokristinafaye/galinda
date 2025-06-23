@@ -1,8 +1,14 @@
-import React from 'react'
+// Todo: Single Selection
+// Todo: Multiple Selection
+
+import React, { useState } from 'react'
 
 const Accordian = () => {
+
+    const [selected, setSelected] = useState(null);
+
   return (
-    <div>Accordian</div>
+    <div >Accordian</div>
   )
 }
 
