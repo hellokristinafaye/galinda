@@ -3,6 +3,7 @@
 
 import React, { useState } from 'react'
 import data from './data';
+import './Accordian.css';
 
 const Accordian = () => {
 
@@ -16,7 +17,7 @@ const Accordian = () => {
     }
 
   return (
-      <div className="wrapper">Accordian
+      <div className="wrapper">
 
           <div className="accordion">
               {
