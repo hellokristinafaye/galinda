@@ -15,7 +15,17 @@ const Accordian = () => {
               {
                 //   edgecase incase we were accessing an API w/ no data, or the call is bad
                   data && data.length > 0 ? 
-                  <div className="">Data here</div>
+                      
+                      data.map(dataItem => 
+                          <div className="item">
+                              <div className="title">
+                                  <h3 className="">{dataItem.question}</h3>
+                              </div>
+                          </div>
+                    
+                )
+                      
+
                       : <div className="">No Data Found</div>
             }
           </div>
