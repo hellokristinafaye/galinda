@@ -20,6 +20,7 @@ const Accordian = () => {
                           <div className="item">
                               <div className="title">
                                   <h3 className="">{dataItem.question}</h3>
+                                  <span className="">+</span>
                               </div>
                           </div>
                     
