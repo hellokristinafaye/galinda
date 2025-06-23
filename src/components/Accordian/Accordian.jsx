@@ -8,7 +8,15 @@ const Accordian = () => {
     const [selected, setSelected] = useState(null);
 
   return (
-    <div className="wrapper">Accordian</div>
+      <div className="wrapper">Accordian
+
+          <div className="accordion">
+              {
+                  
+            }
+          </div>
+
+      </div>
   )
 }
 
