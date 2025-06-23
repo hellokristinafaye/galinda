@@ -9,8 +9,10 @@ const Accordian = () => {
     const [selected, setSelected] = useState(null);
 
     function handleSingleSelection(getCurrentId) {
+        // include a condition here such that if the item is selected, when clicked it'll collapse.
+
         console.log(getCurrentId);
-        setSelected(getCurrentId);
+        setSelected(getCurrentId === selected ? null : getCurrentId);
     }
 
   return (
@@ -29,7 +31,7 @@ const Accordian = () => {
                               </div>
                               {
                                   selected === dataItem.id ?
-                                      <div className="">
+                                      <div className="content">
                                           {dataItem.answer}
                                       </div>
                                       : null
