@@ -21,4 +21,6 @@ const data = [
         question: "versions from the 1914 translation by H. Rackham?",
         answer: "printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s "
     },
-]
+];
+
+export default data;
