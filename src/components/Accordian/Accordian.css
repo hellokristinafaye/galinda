@@ -7,7 +7,7 @@
 }
 
 .accordian{
-    width: 500px;
+    width: 600px;
 }
 
 .item{
@@ -22,4 +22,10 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+}
+
+.content {
+    color: #fff;
+    height: auto;
+    width: 600px;
 }
