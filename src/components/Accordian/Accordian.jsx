@@ -1,5 +1,5 @@
 // Todo: Single Selection - Done!
-// Todo: Multiple Selection
+// Todo: Multiple Selection - DONE! 
 
 import React, { useState } from "react";
 import data from "./data";
