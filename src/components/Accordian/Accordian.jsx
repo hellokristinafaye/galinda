@@ -19,7 +19,13 @@ const Accordian = () => {
     setSelected(getCurrentId === selected ? null : getCurrentId);
   }
 
-  function handleMultiSelection(getCurrentId) {}
+    function handleMultiSelection(getCurrentId) {
+        let cpyMultiple = [...multiple];
+        const findIndexOfCurrentId = cpyMultiple.indexOf(getCurrentId);
+
+        console.log(findIndexOfCurrentId);
+        
+  }
 
   return (
     <div className="wrapper">
@@ -39,7 +45,7 @@ const Accordian = () => {
               // eslint-disable-next-line react/jsx-key
               <div className="item">
                 <div
-                  onClick={() =>
+                  onClick={
                     enableMultiSelection
                       ? () => handleMultiSelection(dataItem.id)
                       : () => handleSingleSelection(dataItem.id)
