@@ -3,11 +3,11 @@ import './App.css'
 import Accordian from './components/Accordian/Accordian'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
     <>
-    <Accordian/>
+    <Accordian />
     </>
   )
 }
