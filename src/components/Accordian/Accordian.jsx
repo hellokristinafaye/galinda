@@ -15,7 +15,7 @@ const Accordian = () => {
   function handleSingleSelection(getCurrentId) {
     // include a condition here such that if the item is selected, when clicked it'll collapse.
 
-    console.log(getCurrentId);
+    // console.log(getCurrentId);
     setSelected(getCurrentId === selected ? null : getCurrentId);
   }
 
@@ -32,9 +32,9 @@ const Accordian = () => {
 
         }
         setMultiple(cpyMultiple);
-        console.log(selected, multiple);
         
-  }
+    }
+    console.log(selected, multiple);
 
   return (
     <div className="wrapper">
