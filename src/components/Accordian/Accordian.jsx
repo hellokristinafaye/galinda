@@ -1,4 +1,4 @@
-// Todo: Single Selection
+// Todo: Single Selection - Done! 
 // Todo: Multiple Selection
 
 import React, { useState } from 'react'
@@ -18,7 +18,9 @@ const Accordian = () => {
 
   return (
       <div className="wrapper">
-
+          
+          <button className="">Enable multiple selections</button>
+  
           <div className="accordion">
               {
                 //   edgecase incase we were accessing an API w/ no data, or the call is bad
@@ -30,6 +32,8 @@ const Accordian = () => {
                                   <h3 className="">{dataItem.question}</h3>
                                   <span className="">+</span>
                               </div>
+
+                              {/* this is the condition that displays or not based on whether or not the item is clicked */}
                               {
                                   selected === dataItem.id ?
                                       <div className="content">
