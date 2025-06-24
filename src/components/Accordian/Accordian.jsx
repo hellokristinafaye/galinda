@@ -66,7 +66,7 @@ const Accordian = () => {
                 </div>
 
                 {/* this is the condition that displays or not based on whether or not the item is clicked */}
-                {selected === dataItem.id ? (
+                {selected === dataItem.id || multiple.indexOf(dataItem.id) !== -1 ? (
                   <div className="content">{dataItem.answer}</div>
                 ) : null}
               </div>
