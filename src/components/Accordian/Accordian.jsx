@@ -6,35 +6,32 @@ import data from "./data";
 import "./Accordian.css";
 
 const Accordian = () => {
+    // for a single selection:
   const [selected, setSelected] = useState(null);
   // for multiple selections:
   const [enableMultiSelection, setEnableMultiSelection] = useState(false);
-  // to store the multiple id's
+  // to store the multiple id's:
   const [multiple, setMultiple] = useState([]);
 
+  // this is a condition such that if the item is selected, when clicked it'll collapse.
   function handleSingleSelection(getCurrentId) {
-    // include a condition here such that if the item is selected, when clicked it'll collapse.
-
-    // console.log(getCurrentId);
     setSelected(getCurrentId === selected ? null : getCurrentId);
   }
 
-    function handleMultiSelection(getCurrentId) {
-        let cpyMultiple = [...multiple];
-        const findIndexOfCurrentId = cpyMultiple.indexOf(getCurrentId);
+  function handleMultiSelection(getCurrentId) {
+    let cpyMultiple = [...multiple];
+    const findIndexOfCurrentId = cpyMultiple.indexOf(getCurrentId);
 
-        // console.log(findIndexOfCurrentId);
-        
-        if (findIndexOfCurrentId === -1) {
-            cpyMultiple.push(getCurrentId)
-        } else {
-            cpyMultiple.splice(findIndexOfCurrentId, 1)
+    // console.log(findIndexOfCurrentId);
 
-        }
-        setMultiple(cpyMultiple);
-        
+    if (findIndexOfCurrentId === -1) {
+      cpyMultiple.push(getCurrentId);
+    } else {
+      cpyMultiple.splice(findIndexOfCurrentId, 1);
     }
-    console.log(selected, multiple);
+    setMultiple(cpyMultiple);
+  }
+  console.log(selected, multiple);
 
   return (
     <div className="wrapper">
@@ -66,7 +63,8 @@ const Accordian = () => {
                 </div>
 
                 {/* this is the condition that displays or not based on whether or not the item is clicked */}
-                {selected === dataItem.id || multiple.indexOf(dataItem.id) !== -1 ? (
+                {selected === dataItem.id ||
+                multiple.indexOf(dataItem.id) !== -1 ? (
                   <div className="content">{dataItem.answer}</div>
                 ) : null}
               </div>
