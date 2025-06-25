@@ -6,14 +6,15 @@ import data from "./data";
 import "./Accordian.css";
 
 const Accordian = () => {
+    // for a single selection:
   const [selected, setSelected] = useState(null);
   // for multiple selections:
   const [enableMultiSelection, setEnableMultiSelection] = useState(false);
-  // to store the multiple id's
+  // to store the multiple id's:
   const [multiple, setMultiple] = useState([]);
 
+  // this is a condition such that if the item is selected, when clicked it'll collapse.
   function handleSingleSelection(getCurrentId) {
-    // this is a condition  such that if the item is selected, when clicked it'll collapse.
     setSelected(getCurrentId === selected ? null : getCurrentId);
   }
 
