@@ -1,13 +1,18 @@
 import { useState } from 'react'
 import './App.css'
-import Accordian from './components/Accordian/Accordian'
+// import Accordian from './components/Accordian/Accordian'
+import RandomColor from './components/ColorGenerator'
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
-    <Accordian />
+      {/* Accordian component */}
+      {/* <Accordian /> */}
+      
+      {/* Random Color Component */}
+      <RandomColor />
     </>
   )
 }
