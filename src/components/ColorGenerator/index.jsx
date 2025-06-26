@@ -5,7 +5,11 @@ export default function RandomColor() {
   // For either Hex or RGB
   const [typeOfColor, setTypeOfColor] = useState("hex");
   // For the color itself
-  const [color, setColor] = useState("#000000");
+    const [color, setColor] = useState("#000000");
+    
+    function handleCreateHexRandomColor() {
+
+    }
 
   return (
     // eslint-disable-next-line no-unreachable
@@ -24,7 +28,16 @@ export default function RandomColor() {
       <button onClick={() => setTypeOfColor("rgb")} className="">
         Create RGBg Color
       </button>
-      <button onClick={handleCreateRandomColor} className="">Generate Random Color</button>
+      <button
+        onClick={
+          typeOfColor === "hex"
+            ? handleCreateHexRandomColor
+            : handleCreateRGBRandomColor
+        }
+        className=""
+      >
+        Generate Random Color
+      </button>
     </div>
   );
 }
