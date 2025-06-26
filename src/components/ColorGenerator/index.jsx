@@ -1,9 +1,16 @@
+import { useState } from "react";
 
 
 
 
 
 export default function RandomColor() {
+    // For either Hex or RGB
+    const [typeOfColor, setTypeOfColor] = useState('hex');
+    // 
+
+
+
   return;
   // eslint-disable-next-line no-unreachable
     <div className="container">
