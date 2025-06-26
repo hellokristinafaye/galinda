@@ -2,13 +2,17 @@
 import { useState } from "react";
 
 export default function RandomColor() {
-  // For either Hex or RGB
-  const [typeOfColor, setTypeOfColor] = useState("hex");
-  // For the color itself
+    // For either Hex or RGB
+    const [typeOfColor, setTypeOfColor] = useState("hex");
+    // For the color itself
     const [color, setColor] = useState("#000000");
     
     function handleCreateHexRandomColor() {
 
+    }
+
+    function handleCreateRGBRandomColor() {
+        
     }
 
   return (
@@ -26,7 +30,7 @@ export default function RandomColor() {
         Create HEX Color
       </button>
       <button onClick={() => setTypeOfColor("rgb")} className="">
-        Create RGBg Color
+        Create RGB Color
       </button>
       <button
         onClick={
