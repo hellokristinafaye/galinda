@@ -18,11 +18,13 @@ export default function RandomColor() {
       const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
     //   This string will eventually be the hex color code that displays
       let hexColor = '#';
-// This is a forloop that will randomly choose a value from the hex array 6 times, and then add it to the hexColor string
+// This is a forloop that will randomly choose a value from the hex array 6 times, and then add it to the hexColor string. hex.length b/c it chooses a random value from the size of the hex array.
       for (let i = 0; i < 6; i++) {
-          hexColor += 
+          hexColor += hex[randomColorUtility(hex.length)];
       }
 
+      console.log(hexColor);
+      
 
   }
 
