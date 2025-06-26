@@ -1,5 +1,5 @@
 /* eslint-disable no-unreachable */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function RandomColor() {
   // For either Hex or RGB
@@ -31,9 +31,17 @@ export default function RandomColor() {
     const g = randomColorUtility(256);
     const b = randomColorUtility(256);
 
-    setColor(`rgb ${r}, ${g}, ${b}`);
+    setColor(`rgb(${r}, ${g}, ${b})`);
   }
 
+    useEffect(() => {
+        if (typeOfColor === 'rgb') {
+            handleCreateRGBRandomColor()
+        } else {
+            handleCreateHexRandomColor();
+        }
+    }, [typeOfColor]);  
+    
   return (
     // eslint-disable-next-line no-unreachable
     // adding inline styling instead of a CSS file
@@ -68,7 +76,9 @@ export default function RandomColor() {
           alignItems: "center",
           color: "#fff",
           fontSize: "60px",
-          marginTop: "50px",
+                  marginTop: "50px",
+                  flexDirection: 'column',
+          gap: '20px'
         }}
       >
         <h3 className="">
