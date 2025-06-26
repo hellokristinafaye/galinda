@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import Accordian from './components/Accordian/Accordian'
+// import Accordian from './components/Accordian/Accordian'
 import RandomColor from './components/ColorGenerator'
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       {/* Accordian component */}
-      <Accordian />
+      {/* <Accordian /> */}
       
       {/* Random Color Component */}
       <RandomColor />
