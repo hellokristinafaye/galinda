@@ -22,13 +22,18 @@ export default function RandomColor() {
       for (let i = 0; i < 6; i++) {
           hexColor += hex[randomColorUtility(hex.length)];
       }
-
       console.log(hexColor);
       setColor(hexColor);
 
   }
 
-  function handleCreateRGBRandomColor() {}
+    function handleCreateRGBRandomColor() {
+      const r = randomColorUtility(256);
+      const g = randomColorUtility(256);
+        const b = randomColorUtility(256);
+        
+        setColor(``)
+  }
 
   return (
     // eslint-disable-next-line no-unreachable
