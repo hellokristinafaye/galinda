@@ -5,11 +5,25 @@ export default function RandomColor() {
   // For either Hex or RGB
   const [typeOfColor, setTypeOfColor] = useState("hex");
   // For the color itself
-  const [color, setColor] = useState("#000000");
+    const [color, setColor] = useState("#000000");
+    
+    // helper function aka utility for randomness
+    function randomColorUtility(length) {
+        return Math.floor(Math.random() * length);
+    }
 
   function handleCreateHexRandomColor() {
-    // #123345
-    const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+      // #123345
+    //   This array holds all the available values we can use for the hex code
+      const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+    //   This string will eventually be the hex color code that displays
+      let hexColor = '#';
+// This is a forloop that will randomly choose a value from the hex array 6 times, and then add it to the hexColor string
+      for (let i = 0; i < 6; i++) {
+          hexColor += 
+      }
+
+
   }
 
   function handleCreateRGBRandomColor() {}
