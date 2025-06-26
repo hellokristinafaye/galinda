@@ -24,7 +24,7 @@ export default function RandomColor() {
       }
 
       console.log(hexColor);
-      
+      setColor(hexColor);
 
   }
 
