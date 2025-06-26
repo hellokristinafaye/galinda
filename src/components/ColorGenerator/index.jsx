@@ -2,18 +2,17 @@
 import { useState } from "react";
 
 export default function RandomColor() {
-    // For either Hex or RGB
-    const [typeOfColor, setTypeOfColor] = useState("hex");
-    // For the color itself
-    const [color, setColor] = useState("#000000");
-    
-    function handleCreateHexRandomColor() {
+  // For either Hex or RGB
+  const [typeOfColor, setTypeOfColor] = useState("hex");
+  // For the color itself
+  const [color, setColor] = useState("#000000");
 
-    }
+  function handleCreateHexRandomColor() {
+    // #123345
+    const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+  }
 
-    function handleCreateRGBRandomColor() {
-        
-    }
+  function handleCreateRGBRandomColor() {}
 
   return (
     // eslint-disable-next-line no-unreachable
