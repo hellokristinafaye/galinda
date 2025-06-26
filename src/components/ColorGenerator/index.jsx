@@ -61,7 +61,15 @@ export default function RandomColor() {
         className=""
       >
         Generate Random Color
-      </button>
+          </button>
+          <div style={{
+              display: 'flex',
+              justifyContent: "center",
+              alignItems: 'center',
+              color: '#fff',
+              fontSize: '60px',
+              marginTop: '50px'
+          }}></div>
     </div>
   );
 }
