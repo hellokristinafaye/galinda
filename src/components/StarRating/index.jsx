@@ -22,22 +22,20 @@ export default function StarRating(numOfStars = 5) {
     }
 
 
-
-
-
     return (
         <div className="">Star Rating
 {
             [...Array(numOfStars)].map((_, index) => {
 
-                return <FaStar
+                return (
+                  <FaStar
                     key={index}
-                    onClick=
-                    onMouseMove=
-                    onMouseLeave=
+                    onClick={handleClick(index)}
+                    onMouseMove={handleMouseEnter(index)}
+                    onMouseLeave={handleMouseLeave(index)}
                     size={40}
-                
-            />
+                  />
+                );
             })
         }
         </div>
