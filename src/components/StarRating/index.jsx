@@ -8,6 +8,23 @@ export default function StarRating(numOfStars = 5) {
     const [rating, setRating] = useState(0);
     const [hover, setHover] = useState(0);
 
+    // Custom Methods
+    const handleClick = (getCurrentIndex) => {
+        
+    }
+   
+    const handleMouseEnter = (getCurrentIndex) => {
+        
+    }
+
+    const handleMouseLeave = (getCurrentIndex) => {
+        
+    }
+
+
+
+
+
     return (
         <div className="">Star Rating
 {
