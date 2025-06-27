@@ -11,14 +11,14 @@ function App() {
     <>
       {/* Accordian component */}
       {/* <Accordian /> */}
-      
+
       {/* Random Color Component */}
       {/* <RandomColor /> */}
 
       {/* Star Rating Component */}
-      <StarRating />
+      <StarRating noOfStars={10} />
     </>
-  )
+  );
 }
 
 export default App
