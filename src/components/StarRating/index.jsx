@@ -7,8 +7,14 @@ export default function StarRating({ noOfStars = 5 }) {
     <div className="">
           Trial 3<br></br>
     
-          {[...Array(noOfStars)].map(() => {
-          return <FaStar />;
+          {[...Array(noOfStars)].map((_, index) => {
+              return <FaStar
+                  key={index}
+                  onClick
+                  onMouseOver
+                  onMouseLeave
+                  size={40}
+              />;
       })}
     </div>
   );
