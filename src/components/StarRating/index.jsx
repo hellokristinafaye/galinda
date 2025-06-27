@@ -1,10 +1,7 @@
 // Trial 2 START
 
-export default function StarRating() {
-    
-    return (
-        <div className="">Star Rating</div>
-    )
+export default function StarRating({noOfStars = 5}) {
+  return <div className="">Star Rating</div>;
 }
 
 
