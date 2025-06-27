@@ -1,8 +1,14 @@
 // Trial 3 START
 
+import { useState } from "react";
 import { FaStar } from "react-icons/fa";
 
 export default function StarRating({ noOfStars = 5 }) {
+    // state vars
+    const [rating, setRating] = useState(0);
+    const [hover, setHover] = useState(0);
+
+
   return (
     <div className="">
           Trial 3<br></br>
