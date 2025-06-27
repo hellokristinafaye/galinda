@@ -16,7 +16,7 @@ function App() {
       {/* <RandomColor /> */}
 
       {/* Star Rating Component */}
-      <StarRating noOfStars={10} />
+      <StarRating  />
     </>
   );
 }
