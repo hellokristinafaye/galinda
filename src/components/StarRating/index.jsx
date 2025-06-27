@@ -8,7 +8,9 @@ export default function StarRating({ noOfStars = 5 }) {
 
   // Custom Methods
   const handleClick = (getCurrentIndex) => {
-    console.log(getCurrentIndex, "Click!");
+      console.log(getCurrentIndex, "Click!");
+      setRating(getCurrentIndex);
+      console.log(rating, "New Rating!")
   };
 
   const handleMouseEnter = (getCurrentIndex) => {
