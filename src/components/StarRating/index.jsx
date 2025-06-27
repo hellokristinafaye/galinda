@@ -1,4 +1,3 @@
-import React from 'react'
 
 export default function StarRating(){
 
@@ -7,11 +6,3 @@ export default function StarRating(){
     )
 }
 
-
-// const index = () => {
-//   return (
-//     <div>index</div>
-//   )
-// }
-
-// export default index
