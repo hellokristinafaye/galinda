@@ -1,9 +1,19 @@
 // Trial 3 START
 
+import {FaStar} from 'react-icons/fa'
+
 export default function StarRating() {
     
     return (
-        <div className="">Trial 3</div>
+        <div className="">Trial 3
+        <br></br>
+        
+            <FaStar
+            />
+        
+        
+        
+        </div>
     )
 }
 
