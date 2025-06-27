@@ -24,13 +24,15 @@ export default function StarRating({ noOfStars = 5 }) {
           Trial 3<br></br>
     
           {[...Array(noOfStars)].map((_, index) => {
-              return <FaStar
+              return (
+                <FaStar
                   key={index}
-                  onClick
-                  onMouseOver
-                  onMouseLeave
+                  onClick={() => handleClick(index)}
+                  onMouseOver={() => handleMouseEnter(index)}
+                  onMouseLeave={() => handleMouseLeave(index)}
                   size={40}
-              />;
+                />
+              );
       })}
     </div>
   );
