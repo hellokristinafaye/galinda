@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { FaStar } from "react-icons/fa";
+import './style.css'
 
 export default function StarRating({ noOfStars = 5 }) {
     // state vars
@@ -10,15 +11,16 @@ export default function StarRating({ noOfStars = 5 }) {
     // custom methods
     function handleClick(getCurrentIndex) {
         console.log(getCurrentIndex, "click!");
+        setRating(getCurrentIndex);
 
     }
     function handleMouseEnter(getCurrentIndex) {
         console.log(getCurrentIndex, "enter!");
-        
+        setHover(getCurrentIndex);
     }
-    function handleMouseLeave(getCurrentIndex) {
-        console.log(getCurrentIndex, "leave!");
-        
+    function handleMouseLeave() {
+        // console.log(getCurrentIndex, "leave!");
+        setHover(rating);
     }
 
 
