@@ -10,15 +10,15 @@ export default function StarRating(numOfStars = 5) {
 
     // Custom Methods
     const handleClick = (getCurrentIndex) => {
-        
+        console.log(getCurrentIndex);
     }
    
     const handleMouseEnter = (getCurrentIndex) => {
-        
+        console.log(getCurrentIndex);
     }
 
     const handleMouseLeave = (getCurrentIndex) => {
-        
+        console.log(getCurrentIndex);
     }
 
 
