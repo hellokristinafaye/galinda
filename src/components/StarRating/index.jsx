@@ -17,12 +17,9 @@ export default function StarRating({ noOfStars = 5 }) {
   const handleMouseEnter = (getCurrentIndex) => {
       console.log(getCurrentIndex, "Over!");
       setHover(getCurrentIndex);
-            // console.log(rating, "New Hover!");
-
   };
 
   const handleMouseLeave = () => {
-    //   console.log(getCurrentIndex, "Leave!");
        setHover(rating);
        console.log(rating, "New!");
   };
@@ -36,11 +33,10 @@ export default function StarRating({ noOfStars = 5 }) {
           <FaStar
             key={index}
             onClick={() => handleClick(index)}
-            // onMouseMove={() => handleMouseEnter(index)}
             onMouseLeave={() => handleMouseLeave(index)}
             onMouseOver={() => handleMouseEnter(index)}
             size={40}
-            // is the index lessthan or equal to the hover or rating indexes?
+            // checking if the index less than or equal to the hover or rating indexes?
             className={index <= (hover || rating) ? "active" : "inactive"}
           />
         );
