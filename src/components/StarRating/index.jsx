@@ -1,44 +1,20 @@
 // Trial 3 START
 
-import {FaStar} from 'react-icons/fa'
+import { FaStar } from "react-icons/fa";
 
-export default function StarRating() {
+export default function StarRating({ noOfStars = 5 }) {
+  return (
+    <div className="">
+          Trial 3<br></br>
     
-    return (
-        <div className="">Trial 3
-        <br></br>
-        
-            <FaStar
-            />
-        
-        
-        
-        </div>
-    )
+          {[...Array(noOfStars)].map(() => {
+          return <FaStar />;
+      })}
+    </div>
+  );
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 // Trial 3 END
-
-
-
-
-
-
-
-
-
 
 // Trial 2 START
 // import { useState } from "react";
