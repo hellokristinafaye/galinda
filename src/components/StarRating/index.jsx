@@ -26,6 +26,7 @@ export default function StarRating({ noOfStars = 5 }) {
           Trial 3<br></br>
     
           {[...Array(noOfStars)].map((_, index) => {
+              index +=1
               return (
                 <FaStar
                   key={index}
