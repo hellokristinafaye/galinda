@@ -20,7 +20,6 @@ export default function StarRating({ noOfStars = 5 }) {
       console.log(hover, "hover!")
   };
   const handleMouseLeave = () => {
-    //   console.log(getCurrentIndex, "left!");
       setHover(rating);
       console.log(rating, "gone!");
   };
