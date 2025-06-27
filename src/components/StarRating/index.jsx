@@ -9,12 +9,14 @@ export default function StarRating({ noOfStars = 5 }) {
     const [hover, setHover] = useState(0);
     // custom methods
     function handleClick(getCurrentIndex) {
-        
+        console.log(getCurrentIndex, "click!");
     }
     function handleMouseEnter(getCurrentIndex) {
+        console.log(getCurrentIndex, "enter!");
         
     }
     function handleMouseLeave(getCurrentIndex) {
+        console.log(getCurrentIndex, "leave!");
         
     }
 
