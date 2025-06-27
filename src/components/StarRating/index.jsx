@@ -10,7 +10,10 @@ export default function StarRating(numOfStars = 5){
 
                 return <FaStar
                     key={index}
-                    
+                    onClick=
+                    onMouseMove=
+                    onMouseLeave=
+                    size={40}
                 
             />
             })
