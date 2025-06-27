@@ -14,7 +14,10 @@ export default function StarRating({ noOfStars = 5 }) {
   };
 
   const handleMouseEnter = (getCurrentIndex) => {
-    console.log(getCurrentIndex, "Over!");
+      console.log(getCurrentIndex, "Over!");
+      setHover(getCurrentIndex);
+            console.log(rating, "New Hover!");
+
   };
 
   const handleMouseLeave = (getCurrentIndex) => {
