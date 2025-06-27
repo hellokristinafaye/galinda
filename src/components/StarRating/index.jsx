@@ -1,6 +1,7 @@
 // Trial 2 START
 import { useState } from 'react';
-import {FaStar} from 'react-icons/fa'
+import { FaStar } from 'react-icons/fa'
+import './style.css';
 
 export default function StarRating({ noOfStars = 5 }) {
     
