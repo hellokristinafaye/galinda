@@ -8,28 +8,29 @@ export default function StarRating({noOfStars = 5}) {
 
   // Custom Methods
   const handleClick = (getCurrentIndex) => {
-    console.log(getCurrentIndex);
+    console.log(getCurrentIndex, "Click!");
   };
 
   const handleMouseEnter = (getCurrentIndex) => {
-    console.log(getCurrentIndex);
+    console.log(getCurrentIndex, "Over!");
   };
 
   const handleMouseLeave = (getCurrentIndex) => {
-    console.log(getCurrentIndex);
+    console.log(getCurrentIndex, "Leave!");
   };
 
   return (
     <div className="">
       {[...Array(noOfStars)].map((_, index) => {
-        // index += 1;
+        index += 1;
 
         return (
           <FaStar
             key={index}
-            // onClick={() => handleClick(index)}
+            onClick={() => handleClick(index)}
             // onMouseMove={() => handleMouseEnter(index)}
-            // onMouseLeave={() => handleMouseLeave(index)}
+            onMouseLeave={() => handleMouseLeave(index)}
+            onMouseOver={() => handleMouseEnter(index)}
             size={40}
           />
         );
