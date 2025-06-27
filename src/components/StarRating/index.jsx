@@ -4,8 +4,17 @@ import {FaStar} from 'react-icons/fa'
 
 export default function StarRating({ noOfStars = 5 }) {
     
+    // state vars
     const [rating, setRating] = useState(0);
     const [hover, setHover] = useState(0);
+
+    // custom methods
+    const handleClick = (getCurrentIndex) => {
+        
+    }
+    const handleMouseEnter = (getCurrentIndex) => {
+        
+    }
   
   
     return (
