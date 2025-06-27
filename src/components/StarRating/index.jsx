@@ -15,6 +15,9 @@ export default function StarRating({ noOfStars = 5 }) {
     const handleMouseEnter = (getCurrentIndex) => {
         
     }
+    const handleMouseLeave = (getCurrentIndex) => {
+        
+    }
   
   
     return (
