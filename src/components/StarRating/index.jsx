@@ -1,3 +1,4 @@
+
 // Trial 4 START
 import { useState } from "react";
 import { FaStar } from "react-icons/fa";
@@ -44,6 +45,53 @@ export default function StarRating({ noOfStars = 5 }) {
     </div>
   );
 }
+=======
+// Trial 3 START
+
+// import { useState } from "react";
+// import { FaStar } from "react-icons/fa";
+// import './style.css'
+
+// export default function StarRating({ noOfStars = 5 }) {
+//     // state vars
+//     const [rating, setRating] = useState(0);
+//     const [hover, setHover] = useState(0);
+//     // custom methods
+//     function handleClick(getCurrentIndex) {
+//         console.log(getCurrentIndex, "click!");
+//         setRating(getCurrentIndex);
+
+//     }
+//     function handleMouseEnter(getCurrentIndex) {
+//         console.log(getCurrentIndex, "enter!");
+//         setHover(getCurrentIndex);
+//     }
+//     function handleMouseLeave() {
+//         // console.log(getCurrentIndex, "leave!");
+//         setHover(rating);
+//     }
+
+
+//   return (
+//     <div className="">
+//           Trial 3<br></br>
+    
+//           {[...Array(noOfStars)].map((_, index) => {
+//               index +=1
+//               return (
+//                 <FaStar
+//                   key={index}
+//                   onClick={() => handleClick(index)}
+//                   onMouseOver={() => handleMouseEnter(index)}
+//                   onMouseLeave={() => handleMouseLeave(index)}
+//                       size={40}
+//                       className={index <= (hover || rating)? 'active': 'inactive'}
+//                 />
+//               );
+//       })}
+//     </div>
+//   );
+// }
 
 // Trial 4 END
 
