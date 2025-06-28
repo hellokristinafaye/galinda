@@ -10,8 +10,13 @@ export default function StarRating({noOfStars = 5}) {
         [...Array(noOfStars)].map((_, index) => {
           
           return (
-
-            <FaStar />
+            <FaStar
+              key={index}
+              onClick
+              onMouseOver
+              onMouseLeave
+              size={40}
+            />
           )
 
 
