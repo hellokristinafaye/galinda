@@ -1,51 +1,26 @@
 // Trial 4 START
-import {FaStar} from 'react-icons/fa'
+import { useState } from "react";
+import { FaStar } from "react-icons/fa";
 
+export default function StarRating({ noOfStars = 5 }) {
+  
+  // state vars
+  const [rating, setRating] = useState(0);
+  const [hover, setHover] = useState(0);
 
-export default function StarRating({noOfStars = 5}) {
+  
   return (
     <div className="">
-
-      {
-        [...Array(noOfStars)].map((_, index) => {
-          
-          return (
-            <FaStar
-              key={index}
-              onClick
-              onMouseOver
-              onMouseLeave
-              size={40}
-            />
-          )
-
-
-          
-        })
-      }
-
-
+      {[...Array(noOfStars)].map((_, index) => {
+        return (
+          <FaStar key={index} onClick onMouseOver onMouseLeave size={40} />
+        );
+      })}
     </div>
-  )
+  );
 }
 
 // Trial 4 END
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Trial 3 START
 
@@ -72,11 +47,10 @@ export default function StarRating({noOfStars = 5}) {
 //         setHover(rating);
 //     }
 
-
 //   return (
 //     <div className="">
 //           Trial 3<br></br>
-    
+
 //           {[...Array(noOfStars)].map((_, index) => {
 //               index +=1
 //               return (
