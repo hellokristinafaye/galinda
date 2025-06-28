@@ -25,6 +25,8 @@ export default function StarRating({ noOfStars = 5 }) {
   return (
     <div className="">
       {[...Array(noOfStars)].map((_, index) => {
+        index += 1
+
         return (
           <FaStar
             key={index}
