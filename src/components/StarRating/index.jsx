@@ -45,7 +45,7 @@ export default function StarRating({ noOfStars = 5 }) {
     </div>
   );
 }
-=======
+
 // Trial 3 START
 
 // import { useState } from "react";
