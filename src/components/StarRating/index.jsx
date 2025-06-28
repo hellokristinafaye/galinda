@@ -34,6 +34,7 @@ export default function StarRating({ noOfStars = 5 }) {
             onMouseOver={() => handleMouseEnter(index)}
             onMouseLeave={() => handleMouseLeave(index)}
             size={40}
+            className={index <= (hover || rating)? 'active': 'inactive'}
           />
         );
       })}
