@@ -1,6 +1,7 @@
 // Trial 4 START
 import { useState } from "react";
 import { FaStar } from "react-icons/fa";
+import './style.css'
 
 export default function StarRating({ noOfStars = 5 }) {
   
@@ -18,7 +19,7 @@ export default function StarRating({ noOfStars = 5 }) {
     setHover(getCurrentIndex);
   }
   function handleMouseLeave() {
-    console.log(getCurrentIndex, "left!");
+    // console.log(getCurrentIndex, "left!");
     setHover(rating);
     
   }
