@@ -1,4 +1,5 @@
 // Trial 4 START
+import {FaStar} from 'react-icons/fa'
 
 
 export default function StarRating({noOfStars = 5}) {
@@ -8,7 +9,11 @@ export default function StarRating({noOfStars = 5}) {
       {
         [...Array(noOfStars)].map((_, index) => {
           
-          return <h1 className="">hi!</h1>
+          return <div className="" >
+
+            <FaStar />
+
+          </div>
         })
       }
 
