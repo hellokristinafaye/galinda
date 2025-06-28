@@ -9,11 +9,13 @@ export default function StarRating({noOfStars = 5}) {
       {
         [...Array(noOfStars)].map((_, index) => {
           
-          return <div className="" >
+          return (
 
             <FaStar />
+          )
 
-          </div>
+
+          
         })
       }
 
