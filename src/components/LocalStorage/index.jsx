@@ -1,4 +1,5 @@
 import useLocalStorage from "./useLocalStorage";
+import './theme.css'
 
 export default function LightDarkMode() {
   const [theme, setTheme] = useLocalStorage("theme", "dark");
