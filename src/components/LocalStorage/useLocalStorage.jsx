@@ -10,8 +10,8 @@ export default function useLocalStorage(key, defaultValue) {
         let currentValue;
 
         try {
-
-            
+            // This gets the key from LS if its' there OR stringifies the defaultValue we already have
+            currentValue = JSON.parse(localStorage.getItem(key) || String(defaultValue))
 
         } catch (error) {
             console.log(err)
