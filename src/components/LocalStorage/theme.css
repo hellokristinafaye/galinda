@@ -22,12 +22,12 @@
     transition: all 0.5s;
 }
 
-.light-dark-mode p{
+.light-dark-mode .container p{
     color: var(--text-primary);
     font-size: 40px;
 }
 
-.light-dark-mode button {
+.light-dark-mode .container button {
     background-color: var(--button-bg);
     border: 1px solid var(--button-bg);
     color: var(--button-text);
@@ -36,4 +36,12 @@
     border-radius: 8px;
     font-weight: 600;
     cursor: pointer;
+}
+
+.light-dark-mode .container {
+    display: flex;
+    justify-content: centter;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
 }
