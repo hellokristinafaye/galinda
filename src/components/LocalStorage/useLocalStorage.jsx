@@ -10,9 +10,13 @@ export default function useLocalStorage(key, defaultValue) {
         let currentValue;
 
         try {
-                    
-        } catch (error) {
+
             
+
+        } catch (error) {
+            console.log(err)
+            // this is in case of error, setting currentValue to whatever is already there
+            currentValue = defaultValue
         }
 
     })
