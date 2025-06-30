@@ -1,7 +1,22 @@
 // Trial 2 START
 
+import { useState } from "react";
 
 
+export default function useLocalStorage(key, defaultValue) {
+    
+    const [value, setValue] = useState(() => {
+        
+        let currentValue;
+
+        try {
+                    
+        } catch (error) {
+            
+        }
+
+    })
+}
 
 
 
