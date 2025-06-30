@@ -1,6 +1,12 @@
 // Trial 2 START
 
-
+export default function LightDarkMode() {
+    
+    return <div className="container">
+        <p className="">Hello World!</p>
+        <button className="">Change Theme</button>
+    </div>
+}
 
 
 
