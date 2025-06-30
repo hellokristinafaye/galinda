@@ -7,6 +7,7 @@ export default function LightDarkMode() {
   function handleToggleTheme() {
     setTheme(theme === "light" ? "dark" : "light");
   }
+    console.log(theme);
 
   return (
     <div className="light-dark-mode" data-theme={theme}>
