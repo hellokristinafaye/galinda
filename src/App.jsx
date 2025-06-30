@@ -3,6 +3,7 @@ import './App.css'
 import Accordian from './components/Accordian/Accordian'
 import RandomColor from './components/ColorGenerator'
 import StarRating from './components/StarRating'
+import LightDarkMode from './components/LocalStorage'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -17,6 +18,9 @@ function App() {
 
       {/* Star Rating Component */}
       {/* <StarRating noOfStars={10} /> */}
+
+      {/* Light/Dark Theme and Local Storage Custom Hook */}
+      <LightDarkMode />
     </>
   );
 }
