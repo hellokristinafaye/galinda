@@ -14,7 +14,7 @@ function App() {
       {/* <Accordian /> */}
 
       {/* Random Color Component */}
-      {/* <RandomColor /> */}
+      <RandomColor />
 
       {/* Star Rating Component */}
       <StarRating noOfStars={10} />
