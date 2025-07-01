@@ -1,32 +1,47 @@
+// Trial 3 START
+
+
+
+
+
+
+
+// Trial 3 END
+
+
+
+
+
+
 // Trial 2 START
 
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
-export default function useLocalStorage(key, defaultValue) {
-  const [value, setValue] = useState(() => {
-    let currentValue;
+// export default function useLocalStorage(key, defaultValue) {
+//   const [value, setValue] = useState(() => {
+//     let currentValue;
 
-    try {
-      // This gets the key from LS if its' there OR stringifies the defaultValue we already have
-      currentValue = JSON.parse(
-        localStorage.getItem(key) || String(defaultValue)
-      );
-    } catch (error) {
-      console.log(error);
-      // this is in case of error, setting currentValue to whatever is already there
-      currentValue = defaultValue;
-    }
-    return currentValue;
-  });
-    
-    // For the SAVE portion of Local Storage
-    useEffect(() => {
-        // regular JS for local storage
-        localStorage.setItem(key, JSON.stringify(value));
-    }, [key, value])
+//     try {
+//       // This gets the key from LS if its' there OR stringifies the defaultValue we already have
+//       currentValue = JSON.parse(
+//         localStorage.getItem(key) || String(defaultValue)
+//       );
+//     } catch (error) {
+//       console.log(error);
+//       // this is in case of error, setting currentValue to whatever is already there
+//       currentValue = defaultValue;
+//     }
+//     return currentValue;
+//   });
 
-    return [value, setValue];
-}
+//     // For the SAVE portion of Local Storage
+//     useEffect(() => {
+//         // regular JS for local storage
+//         localStorage.setItem(key, JSON.stringify(value));
+//     }, [key, value])
+
+//     return [value, setValue];
+// }
 
 // Trial 2 END
 
@@ -58,4 +73,3 @@ export default function useLocalStorage(key, defaultValue) {
 // }
 
 // Trial 1 END
-
