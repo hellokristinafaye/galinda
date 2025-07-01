@@ -1,3 +1,4 @@
+
 // Trial 2 START
 
 import useLocalStorage from "./useLocalStorage"
@@ -40,7 +41,9 @@ export default function LightDarkMode() {
 
 
 
+
 // Trial 1 START
+
 // import useLocalStorage from "./useLocalStorage";
 // import './theme.css'
 
@@ -50,6 +53,9 @@ export default function LightDarkMode() {
 //   function handleToggleTheme() {
 //     setTheme(theme === "light" ? "dark" : "light");
 //   }
+
+//     // console.log(theme);
+
 
 //   return (
 //     <div className="light-dark-mode" data-theme={theme}>
@@ -64,4 +70,7 @@ export default function LightDarkMode() {
 // }
 
 
+
 // Trial 1 END
+
+
