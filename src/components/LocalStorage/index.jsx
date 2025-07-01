@@ -1,6 +1,10 @@
 // Trial 2 START
 
+import useLocalStorage from "./useLocalStorage"
+
 export default function LightDarkMode() {
+
+    const [theme, setTheme] = useLocalStorage('theme', 'dark');
     
     return <div className="container">
         <p className="">Hello World!</p>
