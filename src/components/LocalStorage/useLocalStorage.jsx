@@ -12,7 +12,7 @@ export default function useLocalStorage(key, defaultValue) {
         localStorage.getItem(key) || String(defaultValue)
       );
     } catch (error) {
-      console.log(err);
+      console.log(error);
       // this is in case of error, setting currentValue to whatever is already there
       currentValue = defaultValue;
     }
@@ -24,6 +24,8 @@ export default function useLocalStorage(key, defaultValue) {
         // regular JS for local storage
         localStorage.setItem(key, JSON.stringify(value));
     }, [key, value])
+
+    return [value, setValue];
 }
 
 // Trial 2 END
