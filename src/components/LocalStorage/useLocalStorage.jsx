@@ -1,5 +1,28 @@
-// Trial 4 START
+import { useEffect, useState } from "react";
 
+// Trial 4 START
+export default function useLocalStorage(key, defaultValue) {
+  const [value, setValue] = useState(() => {
+    let currentValue;
+
+    try {
+      currentValue = JSON.parse(
+        localStorage.getItem(key) || String(defaultValue)
+      );
+    } catch (error) {
+      console.log(error);
+      currentValue = defaultValue;
+    }
+
+    return currentValue;
+  })
+      
+    useEffect(() => {
+        localStorage.setItem(key, JSON.stringify(value));
+    }, [key, value])
+    
+    return [value, setValue];
+}
 
 // Trial 4 END
 
@@ -8,7 +31,7 @@
 // import { useEffect, useState } from "react";
 
 // export default function useLocalStorage(key, defaultValue) {
-    
+
 //     const [value, setValue] = useState(() => {
 //         let currentValue;
 
@@ -28,16 +51,7 @@
 //     return [value, setValue];
 // }
 
-
-
-
-
 // Trial 3 END
-
-
-
-
-
 
 // Trial 2 START
 

@@ -1,6 +1,39 @@
 /* Trial 4 START */
+:root {
+    --background: white;
+    --text-primary: black;
+    --button-bg: black;
+    --button-text: white;
+}
 
+[data-theme="dark"] {
+    --background: black;
+    --text-primary: white;
+    --button-bg: white;
+    --button-text: black;
+}
 
+.light-dark-mode {
+    background: var(--background);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+.light-dark-mode .container p {
+    font-size: 100px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: var(--text-primary);
+    padding-bottom: 50px;
+}
+.light-dark-mode .container button {
+    padding: 20px 40px;
+    border-radius: 50px;
+    color: var(--button-text);
+    background: var(--button-bg);
+
+}
 
 /* Trial 4 END */
 

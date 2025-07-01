@@ -1,5 +1,26 @@
-// Trial 4 START
+import useLocalStorage from "./useLocalStorage"
+import './theme.css'
 
+// Trial 4 START
+export default function LightDarkMode() {
+    
+    const [theme, setTheme] = useLocalStorage("theme", "dark");
+
+    function handleToggleTheme() {
+        setTheme(theme === 'light'? 'dark': 'light');
+    }
+
+    console.log(theme)
+
+    return (
+        <div className="light-dark-mode" data-theme={theme}>
+            <div className="container">
+                <p className="">Hello Trial 4</p>
+                <button onClick={handleToggleTheme} className="">Change Theme</button>
+            </div>
+        </div>
+    )
+}
 
 // Trial 4 END
 
