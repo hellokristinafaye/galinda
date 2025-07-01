@@ -1,7 +1,42 @@
-
 /* Trial 3 START  */
 
+:root {
+    --background: #fff;
+    --text-primary: #000;
+    --button-bg: #000;
+    --button-text: #fff;
+}
 
+[data-theme='dark'] {
+    --background: #000;
+    --text-primary: #fff;
+    --button-bg: #fff;
+    --button-text: #000;
+}
+
+.light-dark-mode {
+    background: var(--background);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+}
+
+.light-dark-mode .container p {
+    padding-bottom: 20px;
+    color: var(--text-primary);
+    font-size: 200px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.light-dark-mode .container button {
+    padding: 20px 40px;
+    border: 2px solid var(--button-text);
+    background: var(--button-bg);
+    color: var(--button-text);
+    border-radius: 20px;
+}
 
 
 /* Trial 3 END */
@@ -128,6 +163,3 @@
 
 
 /* Trial 1 END */
-
-
-
