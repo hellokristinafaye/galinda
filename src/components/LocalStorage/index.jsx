@@ -11,10 +11,16 @@ export default function LightDarkMode() {
     }
     console.log(theme);
     
-    return <div className="container" data-theme="theme">
-        <p className="">Hello World!</p>
-        <button onClick={handleToggleTheme} className="">Change Theme</button>
-    </div>
+    return (
+      <div className="light-dark-mode" data-theme="theme">
+        <div className="container">
+          <p className="">Hello World!</p>
+          <button onClick={handleToggleTheme} className="">
+            Change Theme
+          </button>
+        </div>
+      </div>
+    );
 }
 
 

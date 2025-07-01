@@ -12,8 +12,12 @@
     --button-bg: #fff;
     --button-text: #000;
 }
-
-
+.container {
+    background: var(--background);
+}
+.container p {
+    color: var(--text-primary);
+}
 
 
 
