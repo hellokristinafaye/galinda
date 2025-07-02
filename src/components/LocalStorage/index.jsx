@@ -6,7 +6,10 @@ export default function LightDarkMode() {
     
     const [theme, setTheme] = useLocalStorage('theme', 'dark');
 
-    function handleToggleTheme()
+    function handleToggleTheme() {
+        setTheme(theme==='light'?'dark':'light');
+        console.log(theme)
+    }
 
     return (
         <div className="">
