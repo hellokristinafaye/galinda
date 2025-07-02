@@ -2,6 +2,7 @@
 // no container this time
 
 import useLocalStorage from "./useLocalStorage";
+import './theme.css'
 
 export default function LightDarkMode() {
 
