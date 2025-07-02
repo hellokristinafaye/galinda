@@ -1,6 +1,7 @@
 // Trial 5 START
 
 import useLocalStorage from "./useLocalStorage";
+import './theme.css'
 
 export default function LightDarkMode() {
 
@@ -12,7 +13,7 @@ export default function LightDarkMode() {
   }
 
   return (
-    <div className="light-dark-mode">
+    <div className="light-dark-mode" data-theme={theme}>
       <div className="container">
         <p className="">Light Dark Mode && Local Storage</p>
         <button onClick={handleToggleTheme} className="">
