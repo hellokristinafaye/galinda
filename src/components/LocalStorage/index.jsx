@@ -1,25 +1,46 @@
+// Trial 8 START
+
+
+
+// Trial 8 END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Trial 7 START
 // no container this time
 
-import useLocalStorage from "./useLocalStorage";
-import './theme.css'
+// import useLocalStorage from "./useLocalStorage";
+// import './theme.css'
 
-export default function LightDarkMode() {
+// export default function LightDarkMode() {
 
-    const [theme, setTheme] = useLocalStorage('theme', 'dark');
+//     const [theme, setTheme] = useLocalStorage('theme', 'dark');
 
-    function handleToggleTheme() {
-        setTheme(theme === 'light' ? 'dark' : 'light');
-        console.log(theme);
-    }
+//     function handleToggleTheme() {
+//         setTheme(theme === 'light' ? 'dark' : 'light');
+//         console.log(theme);
+//     }
 
-  return (
-    <div className="light-dark-mode" data-theme={theme} >
-      <p className="">LightDarkMode xx Local Storage</p>
-      <button onClick={handleToggleTheme} className="">Change Theme</button>
-    </div>
-  );
-}
+//   return (
+//     <div className="light-dark-mode" data-theme={theme} >
+//       <p className="">LightDarkMode xx Local Storage</p>
+//       <button onClick={handleToggleTheme} className="">Change Theme</button>
+//     </div>
+//   );
+// }
 
 // Trial 7 END
 
