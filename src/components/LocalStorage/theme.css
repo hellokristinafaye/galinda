@@ -16,7 +16,13 @@
     background: var(--background);
     height: 100vh;
 }
-
+.light-dark-mode h1{
+    color: var(--text-primary);
+}
+.light-dark-mode button {
+    color: var(--button-text);
+    background: var(--button-bg);
+}
 
 
 
