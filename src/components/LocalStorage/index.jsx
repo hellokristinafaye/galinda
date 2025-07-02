@@ -4,9 +4,10 @@
 // I would create a page with some text and a button that changes the theme upon click.  I"ll also create a custom hook called "useLocalStorage" to get and set data in local storage.
 
 export default function LightDarkMode() {
+
     
     return (
-      <div className="">
+      <div className="light-dark-mode">
         <div className="container">
                 <p className="">LightDarkMode X Local Storage</p>
                 <button className="">Change Theme</button>

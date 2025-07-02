@@ -1,6 +1,8 @@
 // Trial 6 START
 
-
+export default function useLocalStorage() {
+  
+}
 
 
 
