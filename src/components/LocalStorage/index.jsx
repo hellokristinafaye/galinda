@@ -1,12 +1,17 @@
 // Trial 8 START
 
+import useLocalStorage from "./useLocalStorage"
+
 export default function LightDarkMode() {
     
+    const [theme, setTheme] = useLocalStorage('theme', 'dark');
+
+    function handleToggleTheme()
 
     return (
         <div className="">
             <h1 className="">LightDarkMode xx LocalStorage</h1>
-            <button className="">Change Theme</button>
+            <button onClick={handleToggleTheme} className="">Change Theme</button>
         </div>
     )
 }
