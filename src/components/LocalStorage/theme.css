@@ -15,6 +15,7 @@
 .light-dark-mode {
     background: var(--background);
     height: 100vh;
+    transition: all 0.5s;
 }
 .light-dark-mode h1{
     color: var(--text-primary);
