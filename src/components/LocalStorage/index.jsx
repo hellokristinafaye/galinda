@@ -1,6 +1,15 @@
 // Trial 8 START
 
+export default function LightDarkMode() {
+    
 
+    return (
+        <div className="">
+            <h1 className="">LightDarkMode xx LocalStorage</h1>
+            <button className="">Change Theme</button>
+        </div>
+    )
+}
 
 // Trial 8 END
 
