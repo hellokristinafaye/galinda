@@ -1,6 +1,7 @@
 // Trial 6 START
 
 import useLocalStorage from "./useLocalStorage";
+import './theme.css'
 
 // Create a persistent light/dark mode
 // I would create a page with some text and a button that changes the theme upon click.  I"ll also create a custom hook called "useLocalStorage" to get and set data in local storage.
@@ -14,7 +15,7 @@ export default function LightDarkMode() {
   }
     
   return (
-    <div className="light-dark-mode">
+    <div className="light-dark-mode" data-theme={theme}>
       <div className="container">
         <p className="">LightDarkMode X Local Storage</p>
         <button onClick={handleToggleTheme} className="">
