@@ -6,49 +6,26 @@ import useLocalStorage from "./useLocalStorage";
 // I would create a page with some text and a button that changes the theme upon click.  I"ll also create a custom hook called "useLocalStorage" to get and set data in local storage.
 
 export default function LightDarkMode() {
+  const [theme, setTheme] = useLocalStorage("theme", "dark");
 
-    const [theme, setTheme] = useLocalStorage('theme', 'dark');
+  function handleToggleTheme() {
+    setTheme(theme === "light" ? "dark" : "light");
+    console.log(theme);
+  }
     
-
-    return (
-      <div className="light-dark-mode">
-        <div className="container">
-                <p className="">LightDarkMode X Local Storage</p>
-                <button  className="">Change Theme</button>
-        </div>
+  return (
+    <div className="light-dark-mode">
+      <div className="container">
+        <p className="">LightDarkMode X Local Storage</p>
+        <button onClick={handleToggleTheme} className="">
+          Change Theme
+        </button>
       </div>
-    );
+    </div>
+  );
 }
 
-
-
-
-
 // Trial 6 END
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Trial 5 START
 
