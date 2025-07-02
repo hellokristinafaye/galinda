@@ -1,5 +1,8 @@
 // Trial 5 START
 
+export default function useLocalStorage(key, defaultValue) {
+  
+}
 
 
 
