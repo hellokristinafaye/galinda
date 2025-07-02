@@ -6,16 +6,16 @@ export default function LightDarkMode() {
 
   const [theme, setTheme] = useLocalStorage("theme", "dark");
 
-//   function handleToggleTheme() {
-//     setTheme(theme === "light" ? "dark" : "light");
-//     console.log(theme)
-//   }
+  function handleToggleTheme() {
+    setTheme(theme === "light" ? "dark" : "light");
+    console.log(theme)
+  }
 
   return (
     <div className="light-dark-mode">
       <div className="container">
         <p className="">Light Dark Mode && Local Storage</p>
-        <button className="">
+        <button onClick={handleToggleTheme} className="">
           Change Theme
         </button>
       </div>
