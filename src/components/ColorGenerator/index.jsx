@@ -11,7 +11,14 @@ export default function RandomColor() {
     
     let hexCode = "#";
 
-    
+    function randomChar(length) {
+      return Math.floor(Math.random() * length)
+    }
+
+    for (let i = 0; i < 6; i++) {
+      hexCode += hexChars[randomChar(hexChars.length)];
+    }
+    console.log(hexCode)
   }
 
   function handleCreateRGBColor() {
