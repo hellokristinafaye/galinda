@@ -1,6 +1,7 @@
 // Trial 8 START
 
 import useLocalStorage from "./useLocalStorage"
+import './theme.css'
 
 export default function LightDarkMode() {
     
