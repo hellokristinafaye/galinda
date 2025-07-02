@@ -1,32 +1,16 @@
 // Trial 7 START
+// no container this time
 
 export default function LightDarkMode() {
-    
-    return (
-        <div className="">
-            LightDarkMode
-        </div>
-    )
+  return (
+    <div className="light-dark-mode">
+      <p className="">LightDarkMode xx Local Storage</p>
+      <button className="">Change Theme</button>
+    </div>
+  );
 }
 
-
-
-
-
-
 // Trial 7 END
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Trial 6 START
 
@@ -43,7 +27,7 @@ export default function LightDarkMode() {
 //     setTheme(theme === "light" ? "dark" : "light");
 //     console.log(theme);
 //   }
-    
+
 //   return (
 //     <div className="light-dark-mode" data-theme={theme}>
 //       <div className="container">
