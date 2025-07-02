@@ -11,6 +11,7 @@ export default function RandomColor() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        // background: color
       }}
     >
       <div
@@ -23,6 +24,7 @@ export default function RandomColor() {
           className=""
           style={{
             margin: "10px",
+            padding: "10px",
           }}
         >
           Hex Colors
@@ -31,6 +33,7 @@ export default function RandomColor() {
           className=""
           style={{
             margin: "10px",
+            padding: "10px",
           }}
         >
           RGB Colors
@@ -39,6 +42,7 @@ export default function RandomColor() {
           className=""
           style={{
             margin: "10px",
+            padding: "10px",
           }}
         >
           Generate a New Color
