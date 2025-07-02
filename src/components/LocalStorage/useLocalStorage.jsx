@@ -1,6 +1,6 @@
 // Trial 7 START
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 export default function useLocalStorage(key, defaultValue) {
@@ -17,7 +17,11 @@ export default function useLocalStorage(key, defaultValue) {
     return currentValue;
   })
 
-  
+  useEffect(() => {
+    localStorage.setItem(key, JSON.stringify(value));
+  }, [key, value])
+
+  return [value, setValue];
 }
 
 
