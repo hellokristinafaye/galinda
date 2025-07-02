@@ -4,15 +4,48 @@
 export default function RandomColor() {
   
   return (
-    <div className="container">
-      Random Color Generator
-      <br className="" />
-      <button className="">Hex Colors</button>
-      <button className="">RGB Colors</button>
-      <button className="">Generate a New Color</button>
-
+    <div
+      className="container"
+      style={{
+        height: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <div
+        className="button-container"
+        style={{
+          gap: "10px",
+        }}
+      >
+        <button
+          className=""
+          style={{
+            margin: "10px",
+          }}
+        >
+          Hex Colors
+        </button>
+        <button
+          className=""
+          style={{
+            margin: "10px",
+          }}
+        >
+          RGB Colors
+        </button>
+        <button
+          className=""
+          style={{
+            margin: "10px",
+          }}
+        >
+          Generate a New Color
+        </button>
+      </div>
     </div>
-  )
+  );
 }
 
 
