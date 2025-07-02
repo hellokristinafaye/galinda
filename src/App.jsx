@@ -14,13 +14,13 @@ function App() {
       {/* <Accordian /> */}
 
       {/* Random Color Component */}
-      <RandomColor />
+      {/* <RandomColor /> */}
 
       {/* Star Rating Component */}
       {/* <StarRating noOfStars={10} /> */}
 
       {/* Light/Dark Theme and Local Storage Custom Hook */}
-      {/* <LightDarkMode /> */}
+      <LightDarkMode />
     </>
   );
 }
