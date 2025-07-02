@@ -21,6 +21,9 @@
 }
 .light-dark-mode p {
     color: var(--text-primary);
+    padding-top: 400px;
+    font-size: 100px;
+    font-family:Arial, Helvetica, sans-serif
 }
 .light-dark-mode button {
     color: var(--button-text);
