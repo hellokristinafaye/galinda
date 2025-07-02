@@ -19,6 +19,7 @@ export default function RandomColor() {
       hexCode += hexChars[randomChar(hexChars.length)];
     }
     console.log(hexCode)
+    setColor(hexCode);
   }
 
   function handleCreateRGBColor() {
@@ -33,7 +34,7 @@ export default function RandomColor() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        // background: color
+        background: color
       }}
     >
       <div
