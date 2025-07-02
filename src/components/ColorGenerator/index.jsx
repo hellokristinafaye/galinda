@@ -4,8 +4,13 @@
 export default function RandomColor() {
   
   return (
-    <div className="">
+    <div className="container">
       Random Color Generator
+      <br className="" />
+      <button className="">Hex Colors</button>
+      <button className="">RGB Colors</button>
+      <button className="">Generate a New Color</button>
+
     </div>
   )
 }
