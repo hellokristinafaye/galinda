@@ -19,6 +19,8 @@
 }
 .light-dark-mode .container p{
     color: var(--text-primary);
+    font-size: 100px;
+    font-family:Arial, Helvetica, sans-serif;
 }
 .light-dark-mode .container button {
     color: var(--button-text);
