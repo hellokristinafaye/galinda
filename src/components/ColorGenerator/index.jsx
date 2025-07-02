@@ -59,7 +59,7 @@ export default function RandomColor() {
             margin: "10px",
             padding: "10px",
           }}
-          onClick={() => setTypeOfColor("hex")}
+          onClick={() => setTypeOfColor("rgb")}
         >
           RGB Colors
         </button>
