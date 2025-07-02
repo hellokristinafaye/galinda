@@ -2,12 +2,22 @@
 
 import { useState } from "react";
 
-
 export default function RandomColor() {
-
   const [typeOfColor, setTypeOfColor] = useState("hex");
   const [color, setColor] = useState("#000000");
-  
+
+  function handleCreateHexColor() {
+    const hexChars = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
+    
+    let hexCode = "#";
+
+    
+  }
+
+  function handleCreateRGBColor() {
+    
+  }
+
   return (
     <div
       className="container"
@@ -31,6 +41,7 @@ export default function RandomColor() {
             margin: "10px",
             padding: "10px",
           }}
+          onClick={() => setTypeOfColor("hex")}
         >
           Hex Colors
         </button>
@@ -40,6 +51,7 @@ export default function RandomColor() {
             margin: "10px",
             padding: "10px",
           }}
+          onClick={() => setTypeOfColor("hex")}
         >
           RGB Colors
         </button>
@@ -49,6 +61,9 @@ export default function RandomColor() {
             margin: "10px",
             padding: "10px",
           }}
+          onClick={
+            typeOfColor === "hex" ? handleCreateHexColor : handleCreateRGBColor
+          }
         >
           Generate a New Color
         </button>
@@ -57,20 +72,7 @@ export default function RandomColor() {
   );
 }
 
-
-
-
-
-
-
-
-
-
-
 // Trial 2 END
-
-
-
 
 // Trial 1 START
 /* eslint-disable no-unreachable */
@@ -115,8 +117,8 @@ export default function RandomColor() {
 //         } else {
 //             handleCreateHexRandomColor();
 //         }
-//     }, [typeOfColor]);  
-    
+//     }, [typeOfColor]);
+
 //   return (
 //     // eslint-disable-next-line no-unreachable
 //     // adding inline styling instead of a CSS file
