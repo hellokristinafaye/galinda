@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import './App.css'
+
 import Accordian from './components/Accordian/Accordian'
 import RandomColor from './components/ColorGenerator'
 import StarRating from './components/StarRating'
