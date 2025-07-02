@@ -1,6 +1,30 @@
 /* Trial 7 START */
 
+:root {
+    --background: #fff;
+    --text-primary: #000;
+    --button-bg: #000;
+    --button-text: #fff;
+}
 
+[data-theme='dark'] {
+    --background: #000;
+    --text-primary: #fff;
+    --button-bg: #fff;
+    --button-text: #000;
+}
+
+.light-dark-mode {
+    height: 100vh;
+    background: var(--background);
+}
+.light-dark-mode p {
+    color: var(--text-primary);
+}
+.light-dark-mode button {
+    color: var(--button-text);
+    background: var(--button-bg);
+}
 
 
 
