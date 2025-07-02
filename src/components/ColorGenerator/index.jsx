@@ -44,9 +44,9 @@ export default function RandomColor() {
     const g = randomChar(256);
     const b = randomChar(256);
 
-    setColor(`rgb(${r}, ${g}, ${b})`)
+    setColor(`rgb(${r}, ${g}, ${b})`);
 
-    console.log(color)
+    console.log(color);
   }
 
   return (
@@ -54,12 +54,23 @@ export default function RandomColor() {
       className="container"
       style={{
         height: "100vh",
-        display: "flex",
+        display: "block",
         justifyContent: "center",
+        paddingTop:"400px",
         alignItems: "center",
         background: color,
       }}
     >
+      <div
+        className=""
+        style={{
+          color: "white",
+        }}
+      >
+        <h1 className="">{typeOfColor === "rgb" ? "rgb" : "hex"}</h1>
+        <h3 className="">{color}</h3>
+      </div>
+      
       <div
         className="button-container"
         style={{
