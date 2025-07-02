@@ -1,7 +1,14 @@
 // Trial 2 START
 
 
-
+export default function RandomColor() {
+  
+  return (
+    <div className="">
+      Random Color Generator
+    </div>
+  )
+}
 
 
 
