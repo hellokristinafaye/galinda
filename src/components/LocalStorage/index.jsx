@@ -12,7 +12,7 @@ export default function LightDarkMode() {
     }
 
     return (
-        <div className="">
+        <div className="light-dark-mode" data-theme={theme}>
             <h1 className="">LightDarkMode xx LocalStorage</h1>
             <button onClick={handleToggleTheme} className="">Change Theme</button>
         </div>
