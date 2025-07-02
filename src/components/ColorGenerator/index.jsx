@@ -6,24 +6,47 @@ export default function RandomColor() {
   const [typeOfColor, setTypeOfColor] = useState("hex");
   const [color, setColor] = useState("#000000");
 
-  function handleCreateHexColor() {
-    const hexChars = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
-    
-    let hexCode = "#";
+  function randomChar(length) {
+    return Math.floor(Math.random() * length);
+  }
 
-    function randomChar(length) {
-      return Math.floor(Math.random() * length)
-    }
+  function handleCreateHexColor() {
+    const hexChars = [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+    ];
+
+    let hexCode = "#";
 
     for (let i = 0; i < 6; i++) {
       hexCode += hexChars[randomChar(hexChars.length)];
     }
-    console.log(hexCode)
+    console.log(hexCode);
     setColor(hexCode);
   }
 
   function handleCreateRGBColor() {
-    
+    const r = randomChar(256);
+    const g = randomChar(256);
+    const b = randomChar(256);
+
+    setColor(`rgb(${r}, ${g}, ${b})`)
+
+    console.log(color)
   }
 
   return (
@@ -34,7 +57,7 @@ export default function RandomColor() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        background: color
+        background: color,
       }}
     >
       <div
