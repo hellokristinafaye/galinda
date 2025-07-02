@@ -28,6 +28,9 @@
 .light-dark-mode button {
     color: var(--button-text);
     background: var(--button-bg);
+    padding: 20px 40px;
+    border-radius: 40px;
+    margin-top: 60px;
 }
 
 
