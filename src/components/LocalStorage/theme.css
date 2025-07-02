@@ -14,10 +14,18 @@
     --button-text: #000;
 }
 
-* {
-    background: pink;
+.light-dark-mode {
+    height: 100vh;
+    background: var(--background);
+    transition: all 0.5s;
 }
-
+.light-dark-mode .container p {
+    color: var(--text-primary);
+}
+.light-dark-mode .container button {
+    color: var(--button-text);
+    background: var(--button-bg);
+}
 /* Trial 5 END */
 
 
