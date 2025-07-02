@@ -1,6 +1,6 @@
 // Trial 5 START
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function useLocalStorage(key, defaultValue) {
   const [value, setValue] = useState(() => {
@@ -15,7 +15,14 @@ export default function useLocalStorage(key, defaultValue) {
       currentValue = defaultValue;
     }
     return currentValue;
-  });
+  })
+
+  useEffect(() => {
+    localStorage.setItem(key, JSON.stringify(value));
+  }, [key, value])
+  
+  return [value, setValue];
+  
 }
 
 // Trial 5 END
