@@ -1,11 +1,13 @@
 // Trial 8 START
 
-import useLocalStorage from "./useLocalStorage"
+// import useLocalStorage from "./useLocalStorage"
+import { useState } from 'react';
 import './theme.css'
 
 export default function LightDarkMode() {
     
-    const [theme, setTheme] = useLocalStorage('theme', 'dark');
+    // const [theme, setTheme] = useLocalStorage('theme', 'dark');
+    const [theme, setTheme] = useState('dark');
 
     function handleToggleTheme() {
         setTheme(theme==='light'?'dark':'light');
