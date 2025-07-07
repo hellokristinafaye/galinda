@@ -1,9 +1,21 @@
 // Trial 6 START
 
-export default function StarRating() {
+export default function StarRating({noOfStars = 5}) {
   
   return (
-    <div className="">New Star Rating</div>
+    <div className="">New Star Rating
+    
+      {
+        [...Array(noOfStars)].map((_, index) => {
+          
+          return <div className="">
+            placeholder
+          </div>
+        })
+      }
+      
+    
+    </div>
   )
 }
 
