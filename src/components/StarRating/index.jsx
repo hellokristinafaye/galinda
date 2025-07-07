@@ -1,16 +1,19 @@
 // Trial 6 START
 
+import { FaStar } from "react-icons/fa"
+
 export default function StarRating({noOfStars = 5}) {
   
   return (
-    <div className="">New Star Rating
+    <div className="">
     
       {
         [...Array(noOfStars)].map((_, index) => {
           
-          return <div className="">
-            placeholder
-          </div>
+          return (
+            <FaStar />
+          )
+          
         })
       }
       
