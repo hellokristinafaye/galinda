@@ -27,12 +27,12 @@ export default function StarRating({ noOfStars = 5 }) {
           return (
             <FaStar
               key={index}
-              onClick
-              onMouseOver
-              onMouseLeave
+              onClick={() => handleClick(index)}
+              onMouseOver={() => handleMouseOver(index)}
+              onMouseLeave={() => handleMouseLeave(index)}
               size={40}
             />
-          )
+          );
           
         })
       }
