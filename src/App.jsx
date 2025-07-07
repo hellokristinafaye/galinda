@@ -17,10 +17,10 @@ function App() {
       {/* <RandomColor /> */}
 
       {/* Star Rating Component */}
-      {/* <StarRating noOfStars={10} /> */}
+      <StarRating noOfStars={10} />
 
       {/* Light/Dark Theme and Local Storage Custom Hook */}
-      <LightDarkMode />
+      {/* <LightDarkMode /> */}
     </>
   );
 }
